@@ -123,7 +123,9 @@ $(document).ready(function (){
     })
   }
 
-  ScrollReveal().reveal('.catalog-item', { distance: '50px' }, { delay: 500 });
+  if ($('.catalog-item').length) {
+    ScrollReveal().reveal('.catalog-item', {distance: '50px'}, {delay: 500});
+  }
 
 
 });

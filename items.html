@@ -143,38 +143,38 @@
                     class="swiper mySwiper2">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                 </div>
             </div>
             <div thumbsSlider="" class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                     <div class="swiper-slide">
-                        <img src="images/item/pre.jpg" alt="" loading="lazy">
+                        <img src="images/item/pre.jpg" alt="" loading="lazy" data-fancybox="gallery">
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@
                     <li>на рельсовом ходу, что делает данный кран эксклюзивным в своем сегменте и позволяет решать любые поставленные задачи</li>
                     </ul>
                 </div>
-                <a href="#" class="btn btn-black-transparent">Оставить заявку
+                <a href="#" class="btn btn-black-transparent" data-fancybox data-src="#zakaz-kraba">Оставить заявку
                     <div><img class="icon" src="images/icons/cran-btn.svg" width="19px" height="30px"></div>
                 </a>
             </div>
@@ -397,7 +397,28 @@
                 <p class="footer__copyright">ООО «Спецподрядстрой» © 2022<a href="mailto:info@sps-74.com" target="_blank">E-mail: info@sps-74.com</a></p>
             </div>
         </div>
-
+        <div class="modal" id="zakaz-kraba">
+            <form>
+                <span class="title">
+                    <span>Заказать</span> Кран
+                </span>
+                <p><input type="text" name="name"  placeholder="Ваше имя"></p>
+                <p><input id="phone" name="phone" type="tel" maxlength="50"
+                          required="required"
+                          pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+                          placeholder="Ваш номер телефона"></p>
+                <div class="order-form__btn">
+                    <a href="#" class="btn btn-black-transparent">Отправить
+                        <div><img class="icon" src="images/icons/cran-btn.svg" width="19px" height="30px"></div>
+                    </a>
+                </div>
+                <p class="politics">
+                    <input type="checkbox" id="politics" name="politics_checkbox" value="2" checked>
+                    <label for="politics">Согласен на обработку персональных данных,
+                        <br><span>политика конфиденциальности</span></label>
+                </p>
+            </form>
+        </div>
     </footer>
 </div>
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
