@@ -3,6 +3,9 @@
       font-size: 23px;
   }
 */
+::-webkit-scrollbar{
+  width: 0px;
+}
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/montserrat/Montserrat-Regular.eot");
