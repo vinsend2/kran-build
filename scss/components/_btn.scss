@@ -1,0 +1,66 @@
+.btn {
+  font-family: Alumni Sans;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 52px;
+  background: linear-gradient(to right, #292C33 90%, #D77E1A 10%);
+  height: 52px;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 15px;
+  display: inline-block;
+  text-transform: lowercase;
+  text-align: center;
+  padding: 0 20px;
+  min-width: 218px;
+  box-sizing: border-box;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  display: inline-flex;
+  padding-left: 45px;
+  justify-content: space-between;
+  align-items: center;
+  div {
+    display: flex;
+    background: #D77E1A;
+    width: 60px;
+    height: 100%;
+    align-items: center;
+    position: relative;
+    left: 16px;
+    justify-content: center;
+    transform: skewX(28deg);
+    img {
+      transform: skewX(-28deg);
+    }
+  }
+  &:hover {
+    background: linear-gradient(to right, #D77E1A 90%, #D77E1A 10%);
+  }
+
+  &.btn {
+    &-transparent {
+      background: transparent;
+      color: #404A59;
+      border: 1px solid #BDCADC;
+      box-sizing: border-box;
+      border-radius: 14px;
+      min-width: auto;
+      padding: 20px 38px;
+      div {
+        display: none;
+      }
+    }
+    &-black-transparent {
+
+    }
+      &-ds {
+        box-shadow: 0px 2px 18px 0px rgba(235, 172, 40, 0.49);
+      }
+        &:hover {
+        background-color: $color-second;
+        border-color: #fff;
+        color: #000;
+      }
+    }
+  }

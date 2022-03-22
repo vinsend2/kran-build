@@ -1,0 +1,178 @@
+.contacts {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  h3 {
+    font-family: 'Alumni Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 36px;
+    color: black;
+    display: block;
+    text-transform: uppercase;
+    margin: 0;
+    &:first-letter {
+      color: #F07F00;
+    }
+  }
+  &__top-block {
+    display: flex;
+  }
+  &__buttom-block {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    .cart {
+      ul {
+        padding: 0;
+        li {
+          color: #7E8C93;
+          font-family: 'Roboto';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          text-align: left;
+          line-height: 27px;
+          display: flex;
+          justify-content: space-between;
+          span:first-of-type {
+            text-align: right;
+            min-width: 220px;
+            margin-right: 20px;
+          }
+          span:last-of-type {
+            text-align: left;
+            flex-grow: 1;
+            color: #344B57;
+          }
+        }
+      }
+    }
+    .form {
+      width: 40%;
+    }
+    form {
+      input, select, textarea {
+        font-family: 'Alumni Sans';
+        background: transparent;
+        border-radius: 15px;
+        padding: 0 15px;
+        line-height: 55px;
+        height: 55px;
+        font-size: 20px;
+        width: 100%;
+        border: 1px solid #d3d3d3;
+      }
+      textarea {
+        height: 200px;
+      }
+      .politics {
+        font-family: 'Alumni Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 14px;
+        color: #6B7078;
+        input[type=checkbox] {
+          display: none;
+        }
+        input[type=checkbox] + label {
+          display: block;
+          position: relative;
+          padding-left: 30px;
+          cursor: pointer;
+        }
+        input[type=checkbox] + label:before {
+          content: "";
+          display: block;
+          width: 15px;
+          height: 15px;
+          border: 3px solid #636970;
+          position: absolute;
+          left: 10px;
+          top: -1px;
+          opacity: 0.6;
+          border-radius: 50%;
+          background: transparent;
+          -webkit-transition: all 0.12s, border-color 0.08s;
+          transition: all 0.12s, border-color 0.08s;
+
+        }
+        input[type=checkbox]:checked + label:before {
+          background: orange;
+        }
+        span {
+          color: #F07F00;
+          text-decoration: underline;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  .info {
+    flex-basis: 450px;
+    font-weight: 500;
+    color: darkgray;
+    p:first-of-type {
+      font-size: 24px;
+    }
+    b {
+      font-weight: 500;
+      color: black;
+    }
+  }
+  .map {
+    flex-grow: 2;
+
+    #contacts__map {
+      height: 450px;
+      width: 100%;
+    }
+  }
+  .social-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    padding: 0;
+    &__item {
+    }
+    &__icon {
+      border-radius: 50%;
+      border: 1px solid rgba(132, 142, 154, 1);
+      padding: 7px;
+      width: 42px;
+      height: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    &__container {
+      padding: 0 10px;
+    }
+    &__top-block {
+      flex-wrap: wrap;
+    }
+    &__buttom-block {
+      flex-direction: column;
+      .cart {
+        ul {
+          li {
+            flex-direction: column;
+            span:first-of-type {
+              text-align: left;
+            }
+          }
+        }
+      }
+      .form {
+        width: 100%;
+      }
+    }
+  }
+}

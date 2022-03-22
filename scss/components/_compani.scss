@@ -1,0 +1,28 @@
+.compani {
+  .text-block {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #373C47;
+    b {
+      font-weight: 500;
+    }
+    img:first-of-type {
+      float: right;
+      margin-left: 35px;
+    }
+    ul li {
+      list-style: initial;
+      &::marker {
+        color: #D77E1A;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .text-block {
+      padding: 0 10px;
+    }
+  }
+}

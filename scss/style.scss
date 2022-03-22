@@ -1,0 +1,34 @@
+@import "variables";
+
+// Mixins
+@import "mixins/gradients";
+@import "mixins/vendor-prefixes";
+@import "mixins/clearfix";
+@import "mixins/flex";
+
+@import "mixins/grid-mixins";
+@import "mixins/visibility-mixins";
+
+@import "fonts/montserrat";
+@import "fonts/alumnisans";
+@import "fonts/roboto";
+
+
+@import "components/header";
+@import "components/index_slider";
+@import "components/catalog";
+@import "components/order";
+@import "components/projects";
+@import "components/vacancies";
+@import "components/contacts";
+@import "components/compani";
+@import "components/modal";
+@import "components/price";
+@import "components/item";
+@import "components/btn";
+@import "components/_footer";
+@import "layout";
+//@import "components/socials";
+
+
+

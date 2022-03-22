@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ce602b8d-501b-4e1d-ac61-b00754ecf17f" name="323">
+        <fileTransfer rootFolder="/home/stas/web/sps.luxar.group/public_html" accessType="SFTP" host="95.216.3.91" port="50022" sshConfigId="58e034c3-2622-44f1-8f24-b54103767949" sshConfig="stas@95.216.3.91:50022 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
